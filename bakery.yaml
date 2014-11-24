@@ -1,0 +1,7 @@
+commit: HEAD
+compiler: fontforge
+license: OFL.txt
+process_files: [./build/Kalam-Bold.ttx, ./build/Kalam-Light.ttx, ./build/Kalam-Regular.ttx]
+pyftsubset: --notdef-outline --name-IDs=* --hinting
+subset: ['devanagari (5%, 57%)', latin, latin-ext]
+ttfautohint: '-l 7 -r 28 -G 50 -x 13 -w "G" -D deva -f deva '
